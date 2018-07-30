@@ -1,9 +1,9 @@
 package com.qa.service;
 
+import java.util.HashMap;
+
 public interface IMultipleChoice {
 
-	String getDefinition(String key);
-
-	String getAllDefinitions();
+	HashMap<String, String[]> questionSet();
 
 }

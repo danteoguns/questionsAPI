@@ -23,6 +23,10 @@ public class MultipleChoice {
 
 	@JsonProperty("answers")
 	private ArrayList<String> answers;
+	
+	private ArrayList<String> numberOfLines;
+	
+	private int fileSize;
 
 	private Scanner reader;
 
@@ -82,6 +86,18 @@ public class MultipleChoice {
 			answers.add(answer);
 		}
 		return answers;
+
+	}
+	
+	public int fileSize() {
+		
+		String line = "";
+
+		while (reader.hasNext()) {
+			line = reader.nextLine();
+			numberOfLines.add(line);
+		}
+		return numberOfLines.size();
 
 	}
 
