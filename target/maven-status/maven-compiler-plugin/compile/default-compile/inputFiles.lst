@@ -1,9 +1,0 @@
-/home/dan/Programming/EclipseProjects/fullstackProject/multipleChoiceAPI/src/main/java/com/qa/domain/Answer.java
-/home/dan/Programming/EclipseProjects/fullstackProject/multipleChoiceAPI/src/main/java/com/qa/interoperability/JAXActivator.java
-/home/dan/Programming/EclipseProjects/fullstackProject/multipleChoiceAPI/src/main/java/com/qa/Repository/QuestionRepo.java
-/home/dan/Programming/EclipseProjects/fullstackProject/multipleChoiceAPI/src/main/java/com/qa/Repository/IQuestionRepo.java
-/home/dan/Programming/EclipseProjects/fullstackProject/multipleChoiceAPI/src/main/java/com/qa/interoperability/AccountEndPoint.java
-/home/dan/Programming/EclipseProjects/fullstackProject/multipleChoiceAPI/src/main/java/com/qa/service/IQuestionService.java
-/home/dan/Programming/EclipseProjects/fullstackProject/multipleChoiceAPI/src/main/java/com/qa/utility/JSONutil.java
-/home/dan/Programming/EclipseProjects/fullstackProject/multipleChoiceAPI/src/main/java/com/qa/service/QuestionService.java
-/home/dan/Programming/EclipseProjects/fullstackProject/multipleChoiceAPI/src/main/java/com/qa/domain/Question.java
