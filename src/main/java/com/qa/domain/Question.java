@@ -19,7 +19,7 @@ public class Question {
 	@Column(length = 100)
 	private String firstAnswer, secondAnswer, thirdAnswer, fourthAnswer;
 
-	public Question(long id, String firstAnswer, String secondAnswer, String thirdAnswer, String fourthAnswer ) {
+	public Question(long id, String question, String firstAnswer, String secondAnswer, String thirdAnswer, String fourthAnswer ) {
 		this.id = id;
 		this.firstAnswer = firstAnswer;
 		this.secondAnswer = secondAnswer;

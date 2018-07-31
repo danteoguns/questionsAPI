@@ -22,7 +22,7 @@ public class AccountEndPoint {
 		return service.showQuestion(id);
 	}
 
-	@Path("/json/{id}")
+	@Path("/all-questions/")
 	@GET
 	@Produces("application/json")
 	public String getAllQuestions() {
