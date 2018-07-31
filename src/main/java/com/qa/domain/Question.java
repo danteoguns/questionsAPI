@@ -1,59 +1,51 @@
 package com.qa.domain;
 
-import javax.persistence.Column;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Question {
-	
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
-	@Column(length = 100)
 	private String question;
+	@JoinColumn(name = "answer_id")
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	private List<Answer> answers;
 
-	@Column(length = 100)
-	private String firstAnswer, secondAnswer, thirdAnswer, fourthAnswer;
-
-	public Question(long id, String question, String firstAnswer, String secondAnswer, String thirdAnswer, String fourthAnswer ) {
-		this.id = id;
-		this.firstAnswer = firstAnswer;
-		this.secondAnswer = secondAnswer;
-		this.thirdAnswer = thirdAnswer;
-		this.fourthAnswer = fourthAnswer;
+	public Question(String question, List<Answer> answers) {
+		this.question = question;
+		this.answers = answers;
+	}
+	
+	public Question() {
 		
-		}
-	public long getId() {
-		return id;
+	}
+	
+	public void setQuestion(String question) {
+		this.question = question;
 	}
 	
 	public String getQuestion() {
 		return question;
 	}
 	
-	public String getFirstAnswer() {
-		return firstAnswer;
+	public void setAnswers(List<Answer> answers) {
+		this.answers = answers;
 	}
 	
-	public String getSecondAnswer() {
-		return secondAnswer;
-	}
-	
-	public String getThirdAnswer() {
-		return thirdAnswer;
-	}
-	
-	public String getFourthAnswer() {
-		return fourthAnswer;
-	}
-	
-	@Override
-	public String toString() {
-		return super.toString();
+	public List<Answer> getAnswers() {
+		return answers;
 	}
 
 }

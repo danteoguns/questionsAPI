@@ -1,0 +1,20 @@
+1 class called Answer. Has two attributes, answer (string) and correct (boolean)
+1 class called Question. has two attributes question (string) and List<Answer>
+
+what is a primitive type
+string, false
+int, true
+byte, false
+long, false
+
+new Question("question", new Answer("answer", true), new Answer("answer2", false).
+
+
+insert answers, id
+insert questions, id
+
+question: skaksa,
+answers: [ answer: faksak, correct: true,
+ answer: fasfsa, correct: false,
+ answer: afkas, correct: false 
+~                                

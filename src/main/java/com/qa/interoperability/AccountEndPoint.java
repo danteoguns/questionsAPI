@@ -15,25 +15,11 @@ public class AccountEndPoint {
 	@Inject
 	private IQuestionService service;
 
-	@Path("/show-question/{id}")
-	@GET
-	@Produces("application/json")
-	public String showQuestion(@PathParam("id") Long id) {
-		return service.showQuestion(id);
-	}
-
 	@Path("/all-questions/")
 	@GET
 	@Produces("application/json")
 	public String getAllQuestions() {
 		return service.getAllQuestions();
-	}
-
-	@Path("/choose-answer/{id}")
-	@DELETE
-	@Produces("application/json")
-	public String chooseAnswer(@PathParam("id") Long id) {
-		return service.chooseAnswer(id);
 	}
 
 }
